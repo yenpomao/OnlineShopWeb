@@ -6,7 +6,6 @@ import NewCollections from '../Components/NewCollections/NewCollections.jsx'
 import NewsLetter from '../Components/NewsLetter/NewsLetter.jsx'
 
 export const Shop = () => {
-  console.log('Shop')
   return (
     <div>
       <Hero></Hero>
@@ -14,6 +13,7 @@ export const Shop = () => {
       <Offers></Offers>
       <NewCollections></NewCollections>
       <NewsLetter></NewsLetter>
+      
     </div>
   ) 
 }
