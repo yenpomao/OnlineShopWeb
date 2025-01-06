@@ -1,0 +1,111 @@
+.add-product {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px 50px;
+    margin: 20px auto; /* Center alignment for larger screens */
+    border-radius: 6px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+.addproduct-itemfield {
+    width: 100%;
+    color: #7b7b7b;
+    font-size: 16px;
+    margin-bottom: 20px; /* Add spacing between fields */
+}
+
+.addproduct-itemfield input, .add-product-selector {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 15px;
+    border: 1px solid #c3c3c3;
+    outline: none;
+    color: #7b7b7b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for focus */
+}
+
+.addproduct-itemfield input:focus, .add-product-selector:focus {
+    border-color: #6079ff;
+    box-shadow: 0 0 6px rgba(96, 121, 255, 0.5);
+}
+
+.addproduct-price {
+    display: flex;
+    flex-wrap: wrap; /* Responsive layout */
+    gap: 20px; /* Reduce gap for better spacing */
+}
+
+.add-product-selector {
+    padding: 10px;
+    font-size: 14px;
+    color: #7b7b7b;
+    border: 1px solid #7b7b7b;
+    border-radius: 4px;
+    cursor: pointer; /* Pointer cursor for dropdown */
+    background: #f9f9f9; /* Slight background color for dropdown */
+}
+
+.addproduct-thumnail-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    object-fit: contain;
+    margin: 10px 0;
+    border: 1px dashed #c3c3c3; /* Dashed border for upload area */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.addproduct-thumnail-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.addproduct-btn {
+    margin-top: 20px;
+    width: 160px;
+    height: 50px;
+    border-radius: 6px;
+    background: #6079ff;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.addproduct-btn:hover {
+    background: #5068d6; /* Slightly darker on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+.addproduct-btn:active {
+    background: #4054b3; /* Even darker when clicked */
+    transform: translateY(0); /* Reset on click */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-product {
+        padding: 20px;
+    }
+
+    .addproduct-price {
+        gap: 10px; /* Adjust spacing for smaller screens */
+    }
+
+    .addproduct-thumnail-img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .addproduct-btn {
+        width: 100%; /* Full width button on smaller screens */
+    }
+}

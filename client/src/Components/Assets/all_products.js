@@ -1,11 +1,11 @@
-// Import all images dynamically
+// Use require.context to dynamically load images
 const images = require.context('./all_products_images', false, /\.jpg$/);
 
 // Map image names to their paths
-const imageMap = images.keys().reduce((map, path) => {
-    const imageName = path.replace('./', '').replace('.jpg', ''); // Extract "p1", "p2", etc.
-    map[imageName] = images(path);
-    return map;
+export const imageMap = images.keys().reduce((map, path) => {
+  const imageName = path.replace('./', '').replace('.jpg', ''); // Extract "p1", "p2", etc.
+  map[imageName] = images(path); // Get the resolved path
+  return map;
 }, {});
 
 let all_products = [
@@ -48,6 +48,8 @@ let all_products = [
     { id: 35, name: "Women's Swimsuit", image: imageMap["p35"], new_price: 50.00, old_price: 65.00, category: "women" },
     { id: 36, name: "Women's Formal Dress", image: imageMap["p36"], new_price: 70.00, old_price: 85.00, category: "women" },
 ];
+
+
 
 export default all_products;
 

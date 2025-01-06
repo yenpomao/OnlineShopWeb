@@ -24,6 +24,11 @@
     font-weight: 600;
 }
 
+.nav-logo-icon {
+    height: 60px;
+    width: auto;
+}
+
 .nav-menu {
     display: flex;
     align-items: center;

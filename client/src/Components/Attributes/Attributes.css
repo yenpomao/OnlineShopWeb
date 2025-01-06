@@ -1,4 +1,76 @@
-.Attributes img{
-    height: 30px;
-    width: 30px;
-}
+/* Attributes.css */
+.Attributes {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .Attributes .flaticon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 100px;
+    align-items: center;
+  }
+  
+  .Attributes .flaticon img {
+    width: 43px;
+    height: 40px;
+    margin: 6px;
+    vertical-align: middle;
+  }
+  
+  .Attributes .flaticon a {
+    display: inline-block;
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 14px;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+  
+  .Attributes .flaticon a:hover {
+    text-decoration: underline;
+  }
+  
+  .Attributes .unsplash img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Attributes .unsplash a {
+    display: inline-block;
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .Attributes .unsplash a:hover {
+    text-decoration: underline;
+  }
+  
+  .Attributes .unsplash {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 0px; /* Space between grid items */
+  }
+  
+  .Attributes .unsplash img {
+    width: 100%; /* Ensure images fit within their grid cells */
+    height: auto;
+    border-radius: 8px; /* Optional styling */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional styling */
+  }
+  
+  .Attributes .unsplash img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  
